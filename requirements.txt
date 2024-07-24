@@ -1,0 +1,17 @@
+jinja2~=3.1
+markdown~=3.4
+mkdocs~=1.5
+mkdocs-material~=9.4
+mkdocs-material-extensions~=1.1
+pygments~=2.16
+pymdown-extensions~=10.3
+babel~=2.12
+colorama~=0.4
+paginate~=0.5
+regex~=2023.8
+requests~=2.31
+mkdocs-awesome-pages-plugin~=2.9
+# https://www.neoteroi.dev/mkdocs-plugins/cards/
+neoteroi-mkdocs~=1.0
+mkdocs-minify-plugin~=0.7
+mkdocs-blogging-plugin~=2.2
