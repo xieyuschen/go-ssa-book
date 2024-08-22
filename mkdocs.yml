@@ -1,10 +1,15 @@
 site_name: Go SSA Book
 site_author: xieyuschen(griffin)
+repo_url: https://github.com/xieyuschen/go-ssa-book
+repo_name: git
 site_description: >-
   "Go SSA Book"
 
 nav:
-  - Home: 'index.md'
+  - SSA:
+      - Getting Start: getting-start.md
+      - Build Program: build-program.md
+
 
 extra_javascript:
   # https://squidfunk.github.io/mkdocs-material/reference/math/#katex-mkdocsyml
@@ -40,7 +45,7 @@ theme:
     - search.share
     - navigation.top
     - search.suggest
-    - header.autohide
+#    - header.autohide
   palette:
     - scheme: default
       primary: indigo
