@@ -1,13 +1,12 @@
 name: build
 on:
   push:
-    branches: [*]
   pull_request:
     branches: ["master"]
 permissions:
   contents: write
 jobs:
-  build-check:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -23,3 +22,4 @@ jobs:
             mkdocs-material-
       - run: pip install -r requirements.txt
       - run: mkdocs build
+      - run: rm -rf site

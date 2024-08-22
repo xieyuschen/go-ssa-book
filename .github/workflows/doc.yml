@@ -1,13 +1,13 @@
 name: doc
 on:
-  push:
-    branches: [*]
-  pull_request:
+  push: 
     branches: ["master"]
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 jobs:
-  build-check:
+  doc:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
