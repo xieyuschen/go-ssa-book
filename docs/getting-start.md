@@ -39,11 +39,11 @@ of the provided packages to form a completed SSA program and SSA packages.
 
 ```go
 cfg := &packages.Config{
-Mode: packages.LoadAllSyntax | packages.NeedExportsFile,
+    Mode: packages.LoadAllSyntax | packages.NeedExportsFile,
 }
 pkgs, err := packages.Load(cfg, "golang.org/x/tools/mocked")
 if err != nil {
-panic(-1)
+    panic(-1)
 }
 program, spkg := ssautil.Packages(pkgs, ssa.SanityCheckFunctions)
 ```
@@ -107,3 +107,5 @@ When analyzing SSA representations, you should prevent to use name-based operati
 implementation easiness.
 
 > The program representation constructed by this package is fully resolved internally
+
+<!-- todo: this part hasn't been finished, need to refine further -->
